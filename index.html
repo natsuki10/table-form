@@ -1,1 +1,84 @@
-test1
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+</head>
+<body>
+<!--タイトル-->
+    <h1>コース一覧</h1>
+<!--表-->
+    <table>
+        <tr>
+            <th>コース</th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr>
+            <th>前菜</th>
+            <td>アヒージョ</td>
+            <td>アクアパッツァ</td>
+            <td>ポトフ</td>
+        </tr>
+        <tr>
+            <th>主菜</th>
+            <td>パエリア</td>
+            <td>ボロネーゼ</td>
+            <td>フォアグラ</td>
+        </tr>
+        <tr>
+            <th>デザート</th>
+            <td>フラン</td>
+            <td>ティラミス</td>
+            <td>カヌレ</td>
+        </tr>
+    </table>
+<!--フォーム-->
+    <h2>Reservation</h2>
+    <div class="form">
+    <form action="/form.php" method="post">
+        <div class="form-text">
+            <div>
+                <label for="email">名前</label><br>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="name">メールアドレス</label><br>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="name">コース</label><br>
+                <input type="radio" id="course" name="course" value="A">A
+                <input type="radio" id="course" name="course" value="B">B
+                <input type="radio" id="course" name="course" value="C">C
+            </div>
+            <div>
+                <label for="name">支店名</label><br>
+                <select name="branch" id="branch">
+                    <option value="spein">スペイン</option>
+                    <option value="itaria">イタリア</option>
+                    <option value="furansu">フランス</option>
+                </select>
+            </div>
+            <div>
+                <label for="comment">人数</label><br>
+                <input type="text" id="number-of-people" name="number-of-people">
+            </div>
+            <div>
+                <label for="comment">コメント</label><br>
+                <textarea name="comment" id="comment"></textarea>
+            </div>
+            <div>
+                <label for="consent">同意する</label>
+                <input type="checkbox" name="consent">
+            </div>
+        </div>
+            <div class="submit"><input type="submit" value="送信"></div>
+     </form>
+    </div>
+</body>
+</html>

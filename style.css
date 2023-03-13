@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body {
+    text-align: center;
+}
+table {
+    margin: auto;
+    text-align: center;
+}
+table,th,td {
+    border-collapse:collapse;
+    border:1px solid;
+}
+.form {
+    text-align: center;
+}
+.form-text {
+    display: inline-block;
+    text-align: left;
+}
+.submit {
+    text-align: center;
+}
+textarea {
+    resize: none;
+}
